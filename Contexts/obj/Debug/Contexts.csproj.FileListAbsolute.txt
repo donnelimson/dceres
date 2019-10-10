@@ -1,0 +1,16 @@
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\Contexts.dll.config
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\Contexts.dll
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\Contexts.pdb
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\EntityFramework.dll
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\Models.dll
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\Models.pdb
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\EntityFramework.xml
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.csprojAssemblyReference.cache
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.csproj.CoreCompileInputs.cache
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.csproj.CopyComplete
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.dll
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.pdb
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.csproj.GenerateResource.cache
+C:\Users\Donnel Imson\source\repos\DBO2\Contexts\obj\Debug\Contexts.Migrations.initial.resources
