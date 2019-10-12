@@ -1,5 +1,7 @@
 ﻿using Infrastructure.Services;
+using MetroFramework.Controls;
 using MetroFramework.Forms;
+using Models.PublicClass;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,27 +18,39 @@ namespace DBO2.Forms.POSMainForms
     {
         public MainForm()
         {
-           
+      
             InitializeComponent();
         }
         //services
         DepartmentServices _departmentService = new DepartmentServices();
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            AppUserFullNameLabel.Text = AppUserStatic.FullName;
+            DepartmentPanel.WrapContents = true;
             var departmentList = _departmentService.GetAllDepartment();
-            int top = 50;
-            int left = 100;
+            int left = 0;
             foreach(var item in departmentList)
             {
-                Button departmentButton = new Button();
+                MetroTile departmentButton = new MetroTile();
+                departmentButton.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
                 departmentButton.Left = left;
-                departmentButton.Top = top;
+                departmentButton.Height = 50;
+                departmentButton.Width = 100;
                 departmentButton.Name = item.DepartmentId.ToString();
                 departmentButton.Text = item.DepartmentDescription;
+                departmentButton.TextAlign = ContentAlignment.MiddleCenter;
                 DepartmentPanel.Controls.Add(departmentButton);
-                top += departmentButton.Height + 2;
+                left += 120;
             }
+        }
+        private void DateTimeTick()
+        {
+            DateTimeLabel.Text = DateTime.Now.ToString();
+        }
+
+        private void MainFormTimer_Tick(object sender, EventArgs e)
+        {
+            DateTimeTick();
         }
 
     }

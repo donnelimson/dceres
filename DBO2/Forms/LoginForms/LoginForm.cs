@@ -12,6 +12,7 @@ using MetroFramework.Forms;
 using DBO2.PopupForms;
 using DBO2.Forms.POSMainForms;
 using System.Threading;
+using Models.PublicClass;
 
 namespace DBO2
 {
@@ -44,8 +45,10 @@ namespace DBO2
         private void LoginButton_Click_1(object sender, EventArgs e)
         {
             var result = _appuserServices.CheckUsernameAndPassword(UsernameTextbox.Text, PasswordTextbox.Text);
-            if (result)
+            if (result!=null)
             {
+                AppUserStatic.AppUserId = result.AppUserId;
+                AppUserStatic.FullName = result.FullName;
                 this.Hide();
                 mainForm.Show();
             }

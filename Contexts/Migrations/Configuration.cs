@@ -54,7 +54,7 @@
                     CreatedByAppUserId = 1,
                     CreatedOn = DateTime.Now,
                     IsActive = true,
-                    DepartmentDescription = "Chicken",
+                    DepartmentDescription = "CHICKEN",
                     DepartmentCode = "CK",
                 });
              context.Departments.AddOrUpdate(a => a.DepartmentDescription,
@@ -63,8 +63,44 @@
                     CreatedByAppUserId = 1,
                     CreatedOn = DateTime.Now,
                     IsActive = true,
-                    DepartmentDescription = "Pork",
+                    DepartmentDescription = "PORK",
                     DepartmentCode = "PK",
+                });
+            context.Departments.AddOrUpdate(a => a.DepartmentDescription,
+                new Department
+                {
+                    CreatedByAppUserId = 1,
+                    CreatedOn = DateTime.Now,
+                    IsActive = true,
+                    DepartmentDescription = "FISH",
+                    DepartmentCode = "FS",
+                });
+            context.Departments.AddOrUpdate(a => a.DepartmentDescription,
+                new Department
+                {
+                    CreatedByAppUserId = 1,
+                    CreatedOn = DateTime.Now,
+                    IsActive = true,
+                    DepartmentDescription = "BEEF",
+                    DepartmentCode = "BF",
+                });
+            context.Departments.AddOrUpdate(a => a.DepartmentDescription,
+                new Department
+                {
+                    CreatedByAppUserId = 1,
+                    CreatedOn = DateTime.Now,
+                    IsActive = true,
+                    DepartmentDescription = "PRAWN",
+                    DepartmentCode = "PR",
+                });
+            context.Departments.AddOrUpdate(a => a.DepartmentDescription,
+                new Department
+                {
+                    CreatedByAppUserId = 1,
+                    CreatedOn = DateTime.Now,
+                    IsActive = true,
+                    DepartmentDescription = "DRINKS",
+                    DepartmentCode = "DR",
                 });
             context.SaveChanges();
         }

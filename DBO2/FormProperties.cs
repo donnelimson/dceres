@@ -18,6 +18,7 @@ namespace DBO2
             MinimizeBox = false;
             Movable = false;
             Resizable = false;
+            ShowInTaskbar = false;
         }
         protected void DarkenForm(Form form)
         {
