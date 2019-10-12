@@ -54,6 +54,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AppuserServices.cs" />
+    <Compile Include="Services\DepartmentServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

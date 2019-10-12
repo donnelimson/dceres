@@ -12,7 +12,6 @@ C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.csproj.CoreCompileIn
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.csproj.CopyComplete
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.exe
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.pdb
-C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.Form1.resources
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Contexts.dll
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Infrastructure.dll
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Models.dll
@@ -21,3 +20,9 @@ C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Contexts.dll.config
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Infrastructure.pdb
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Infrastructure.dll.config
 C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\Models.pdb
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\MetroFramework.dll
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.LoginForm.resources
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.PopupForms.ErrorPopup.resources
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.Forms.POSMainForms.MainForm.resources
+C:\Users\Donnel Imson\source\repos\DBO2\DBO2\obj\Debug\DBO2.FormProperties.resources

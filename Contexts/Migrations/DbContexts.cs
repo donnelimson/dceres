@@ -12,8 +12,10 @@ namespace Contexts.Migrations
     {
         public DbContexts() : base("DCERES"){
         }
-
+        //Dbsets
         public DbSet<AppUser> Appusers { get; set; }
+        public DbSet<MasterItem> MasterItems { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 
 }

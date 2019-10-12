@@ -15,6 +15,8 @@ namespace DBO2.Migrations
         }
         //Dbsets
         public DbSet<AppUser> Appusers { get; set; }
+        public DbSet<MasterItem> MasterItems { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 
 }

@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DTO\Department\DepartmentDTO.cs" />
+    <Compile Include="ModelBase.cs" />
     <Compile Include="DataModels\AppUser.cs" />
+    <Compile Include="DataModels\Department.cs" />
+    <Compile Include="DataModels\MasterItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
