@@ -127,7 +127,7 @@
                  IsActive = true,
                  LongDescription = "Fried Chicken (2pc)",
                  ShortDescription = "Frd Chckn (2pc)",
-                 UnitPrice = 79,
+                 UnitPrice = 119,
                  DepartmentId = chickenDepartmentId
              });
             var porkDepartmentId = context.Departments.Where(x => x.DepartmentDescription == "PORK").Select(a => a.DepartmentId).FirstOrDefault();
@@ -150,9 +150,86 @@
                  IsActive = true,
                  LongDescription = "Pork Teriyaki",
                  ShortDescription = "Prk Tryki",
-                 UnitPrice = 79,
+                 UnitPrice = 89,
                  DepartmentId = porkDepartmentId
              });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork Sinigang",
+             ShortDescription = "Prk Sngng",
+             UnitPrice = 129,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork Adobo",
+             ShortDescription = "Prk Adb",
+             UnitPrice = 119,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork Lechon",
+             ShortDescription = "Prk Lchn",
+             UnitPrice = 149,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Porkchop",
+             ShortDescription = "Porkchop",
+             UnitPrice = 79,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork Salipaciao",
+             ShortDescription = "Prk Slpciao",
+             UnitPrice = 159,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork KareKare",
+             ShortDescription = "Prk Karekare",
+             UnitPrice = 129,
+             DepartmentId = porkDepartmentId
+         });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+         new MasterItem
+         {
+             CreatedByAppUserId = 1,
+             CreatedOn = DateTime.Now,
+             IsActive = true,
+             LongDescription = "Pork Embotido",
+             ShortDescription = "Prk Embtd",
+             UnitPrice = 109,
+             DepartmentId = porkDepartmentId
+         });
             context.SaveChanges();
         }
     }

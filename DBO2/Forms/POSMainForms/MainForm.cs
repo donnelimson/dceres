@@ -36,8 +36,8 @@ namespace DBO2.Forms.POSMainForms
                 MetroTile departmentButton = new MetroTile();
                 departmentButton.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
                 departmentButton.Left = left;
-                departmentButton.Height = 50;
-                departmentButton.Width = 100;
+                departmentButton.Height = 70;
+                departmentButton.Width = 126;
                 departmentButton.Click += DepartmentClick;
                 departmentButton.Name = item.DepartmentId.ToString();
                 departmentButton.Text = item.DepartmentDescription;
@@ -46,6 +46,7 @@ namespace DBO2.Forms.POSMainForms
                 left += 120;
             }
         }
+        //Click event for departments
        private void DepartmentClick(object sender,EventArgs e)
         {
             var button = (Button)sender;
@@ -57,15 +58,16 @@ namespace DBO2.Forms.POSMainForms
                 MetroTile masteritemButton = new MetroTile();
                 masteritemButton.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
                 masteritemButton.Left = left;
-                masteritemButton.Height = 50;
-                masteritemButton.Width = 100;
+                masteritemButton.Height = 100;
+                masteritemButton.Width = 155;
            //     masteritemButton.Click += DepartmentClick;
                 masteritemButton.Name = item.MasterItemId.ToString();
-                masteritemButton.Text = item.LongDescription;
+                masteritemButton.Text = item.LongDescription + Environment.NewLine + Math.Round(Convert.ToDecimal(item.UnitPrice), 2).ToString("N");
                 masteritemButton.TextAlign = ContentAlignment.MiddleCenter;
                 MasterItemPanel.Controls.Add(masteritemButton);
             }
         }
+        //time ticker for mainform // date
         private void DateTimeTick()
         {
             DateTimeLabel.Text = DateTime.Now.ToString();
@@ -76,5 +78,9 @@ namespace DBO2.Forms.POSMainForms
             DateTimeTick();
         }
 
+        private void CheckoutButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

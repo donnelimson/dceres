@@ -48,7 +48,7 @@
             // 
             this.DepartmentPanel.Location = new System.Drawing.Point(0, 378);
             this.DepartmentPanel.Name = "DepartmentPanel";
-            this.DepartmentPanel.Size = new System.Drawing.Size(520, 252);
+            this.DepartmentPanel.Size = new System.Drawing.Size(529, 252);
             this.DepartmentPanel.TabIndex = 0;
             // 
             // TaskbarPanel
@@ -98,16 +98,16 @@
             // 
             // MasterItemPanel
             // 
-            this.MasterItemPanel.Location = new System.Drawing.Point(526, 4);
+            this.MasterItemPanel.Location = new System.Drawing.Point(538, 4);
             this.MasterItemPanel.Name = "MasterItemPanel";
-            this.MasterItemPanel.Size = new System.Drawing.Size(500, 368);
+            this.MasterItemPanel.Size = new System.Drawing.Size(488, 368);
             this.MasterItemPanel.TabIndex = 2;
             // 
             // ActionPanel
             // 
-            this.ActionPanel.Location = new System.Drawing.Point(526, 378);
+            this.ActionPanel.Location = new System.Drawing.Point(538, 378);
             this.ActionPanel.Name = "ActionPanel";
-            this.ActionPanel.Size = new System.Drawing.Size(503, 252);
+            this.ActionPanel.Size = new System.Drawing.Size(491, 252);
             this.ActionPanel.TabIndex = 3;
             // 
             // QuantityListBox
@@ -123,13 +123,13 @@
             this.ProductListBox.FormattingEnabled = true;
             this.ProductListBox.Location = new System.Drawing.Point(41, 4);
             this.ProductListBox.Name = "ProductListBox";
-            this.ProductListBox.Size = new System.Drawing.Size(240, 368);
+            this.ProductListBox.Size = new System.Drawing.Size(249, 368);
             this.ProductListBox.TabIndex = 5;
             // 
             // UnitPriceListBox
             // 
             this.UnitPriceListBox.FormattingEnabled = true;
-            this.UnitPriceListBox.Location = new System.Drawing.Point(278, 4);
+            this.UnitPriceListBox.Location = new System.Drawing.Point(287, 4);
             this.UnitPriceListBox.Name = "UnitPriceListBox";
             this.UnitPriceListBox.Size = new System.Drawing.Size(110, 368);
             this.UnitPriceListBox.TabIndex = 6;
@@ -137,7 +137,7 @@
             // TotalUnitPriceListBox
             // 
             this.TotalUnitPriceListBox.FormattingEnabled = true;
-            this.TotalUnitPriceListBox.Location = new System.Drawing.Point(385, 4);
+            this.TotalUnitPriceListBox.Location = new System.Drawing.Point(394, 4);
             this.TotalUnitPriceListBox.Name = "TotalUnitPriceListBox";
             this.TotalUnitPriceListBox.Size = new System.Drawing.Size(135, 368);
             this.TotalUnitPriceListBox.TabIndex = 7;
@@ -152,6 +152,7 @@
             this.CheckoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CheckoutButton.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.CheckoutButton.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.CheckoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // MainForm
             // 
