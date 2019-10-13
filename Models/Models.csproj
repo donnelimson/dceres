@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DTO\AppUser\AppUserDTO.cs" />
     <Compile Include="DTO\Department\DepartmentDTO.cs" />
+    <Compile Include="DTO\MasterItem\MasterItemDTO.cs" />
     <Compile Include="ModelBase.cs" />
     <Compile Include="DataModels\AppUser.cs" />
     <Compile Include="DataModels\Department.cs" />

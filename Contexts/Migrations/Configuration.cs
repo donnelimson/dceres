@@ -107,7 +107,7 @@
         private static void SeedInitMasterItem(DbContexts context)
         {
             //Initial Items and department
-            var departmentId = context.Departments.Where(x => x.DepartmentDescription == "Chicken").Select(a => a.DepartmentId).FirstOrDefault();
+            var chickenDepartmentId = context.Departments.Where(x => x.DepartmentDescription == "CHICKEN").Select(a => a.DepartmentId).FirstOrDefault();
             context.MasterItems.AddOrUpdate(a => a.LongDescription,
                 new MasterItem
                 {
@@ -117,8 +117,42 @@
                     LongDescription="Fried Chicken (1pc)",
                     ShortDescription= "Frd Chckn (1pc)",
                     UnitPrice=79,
-                    DepartmentId=departmentId
+                    DepartmentId= chickenDepartmentId
                 });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+             new MasterItem
+             {
+                 CreatedByAppUserId = 1,
+                 CreatedOn = DateTime.Now,
+                 IsActive = true,
+                 LongDescription = "Fried Chicken (2pc)",
+                 ShortDescription = "Frd Chckn (2pc)",
+                 UnitPrice = 79,
+                 DepartmentId = chickenDepartmentId
+             });
+            var porkDepartmentId = context.Departments.Where(x => x.DepartmentDescription == "PORK").Select(a => a.DepartmentId).FirstOrDefault();
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+             new MasterItem
+             {
+                 CreatedByAppUserId = 1,
+                 CreatedOn = DateTime.Now,
+                 IsActive = true,
+                 LongDescription = "Pork Tonkatsu",
+                 ShortDescription = "Prk Tnktsu",
+                 UnitPrice = 79,
+                 DepartmentId = porkDepartmentId
+             });
+            context.MasterItems.AddOrUpdate(a => a.LongDescription,
+             new MasterItem
+             {
+                 CreatedByAppUserId = 1,
+                 CreatedOn = DateTime.Now,
+                 IsActive = true,
+                 LongDescription = "Pork Teriyaki",
+                 ShortDescription = "Prk Tryki",
+                 UnitPrice = 79,
+                 DepartmentId = porkDepartmentId
+             });
             context.SaveChanges();
         }
     }
