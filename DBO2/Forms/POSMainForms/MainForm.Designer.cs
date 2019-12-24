@@ -100,7 +100,7 @@
             // 
             this.MasterItemPanel.Location = new System.Drawing.Point(538, 4);
             this.MasterItemPanel.Name = "MasterItemPanel";
-            this.MasterItemPanel.Size = new System.Drawing.Size(488, 368);
+            this.MasterItemPanel.Size = new System.Drawing.Size(488, 364);
             this.MasterItemPanel.TabIndex = 2;
             // 
             // ActionPanel
@@ -112,34 +112,45 @@
             // 
             // QuantityListBox
             // 
+            this.QuantityListBox.Enabled = false;
+            this.QuantityListBox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantityListBox.FormattingEnabled = true;
+            this.QuantityListBox.ItemHeight = 20;
             this.QuantityListBox.Location = new System.Drawing.Point(0, 4);
             this.QuantityListBox.Name = "QuantityListBox";
-            this.QuantityListBox.Size = new System.Drawing.Size(44, 368);
+            this.QuantityListBox.Size = new System.Drawing.Size(44, 364);
             this.QuantityListBox.TabIndex = 4;
             // 
             // ProductListBox
             // 
+            this.ProductListBox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductListBox.FormattingEnabled = true;
+            this.ProductListBox.ItemHeight = 20;
             this.ProductListBox.Location = new System.Drawing.Point(41, 4);
             this.ProductListBox.Name = "ProductListBox";
-            this.ProductListBox.Size = new System.Drawing.Size(249, 368);
+            this.ProductListBox.Size = new System.Drawing.Size(249, 364);
             this.ProductListBox.TabIndex = 5;
             // 
             // UnitPriceListBox
             // 
+            this.UnitPriceListBox.Enabled = false;
+            this.UnitPriceListBox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnitPriceListBox.FormattingEnabled = true;
+            this.UnitPriceListBox.ItemHeight = 20;
             this.UnitPriceListBox.Location = new System.Drawing.Point(287, 4);
             this.UnitPriceListBox.Name = "UnitPriceListBox";
-            this.UnitPriceListBox.Size = new System.Drawing.Size(110, 368);
+            this.UnitPriceListBox.Size = new System.Drawing.Size(110, 364);
             this.UnitPriceListBox.TabIndex = 6;
             // 
             // TotalUnitPriceListBox
             // 
+            this.TotalUnitPriceListBox.Enabled = false;
+            this.TotalUnitPriceListBox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalUnitPriceListBox.FormattingEnabled = true;
+            this.TotalUnitPriceListBox.ItemHeight = 20;
             this.TotalUnitPriceListBox.Location = new System.Drawing.Point(394, 4);
             this.TotalUnitPriceListBox.Name = "TotalUnitPriceListBox";
-            this.TotalUnitPriceListBox.Size = new System.Drawing.Size(135, 368);
+            this.TotalUnitPriceListBox.Size = new System.Drawing.Size(135, 364);
             this.TotalUnitPriceListBox.TabIndex = 7;
             // 
             // CheckoutButton

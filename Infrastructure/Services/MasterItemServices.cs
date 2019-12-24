@@ -21,5 +21,15 @@ namespace Infrastructure.Services
                 UnitPrice = a.UnitPrice
             }).ToList();
         }
+       public MasterItemDTO GetMasterItemById (int masterItemId)
+        {
+            return db.MasterItems.Where(x => x.MasterItemId == masterItemId).Select(a => new MasterItemDTO
+            {
+                MasterItemId = a.MasterItemId,
+                LongDescription = a.LongDescription,
+                ShortDescription = a.ShortDescription,
+                UnitPrice = a.UnitPrice
+            }).FirstOrDefault();
+        }
     }
 }

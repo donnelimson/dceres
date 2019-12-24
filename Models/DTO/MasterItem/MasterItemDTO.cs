@@ -13,4 +13,5 @@ namespace Models.DTO.MasterItem
         public double? UnitPrice { get; set; }
         public string ShortDescription { get; set; }
     }
+    
 }

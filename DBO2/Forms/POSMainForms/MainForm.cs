@@ -60,18 +60,23 @@ namespace DBO2.Forms.POSMainForms
                 masteritemButton.Left = left;
                 masteritemButton.Height = 100;
                 masteritemButton.Width = 155;
-           //     masteritemButton.Click += DepartmentClick;
+                masteritemButton.Click += MasterItemClick;
                 masteritemButton.Name = item.MasterItemId.ToString();
                 masteritemButton.Text = item.LongDescription + Environment.NewLine + Math.Round(Convert.ToDecimal(item.UnitPrice), 2).ToString("N");
                 masteritemButton.TextAlign = ContentAlignment.MiddleCenter;
                 MasterItemPanel.Controls.Add(masteritemButton);
             }
         }
-        //time ticker for mainform // date
-        private void DateTimeTick()
+        private void MasterItemClick(object sender, EventArgs e)
         {
-            DateTimeLabel.Text = DateTime.Now.ToString();
+            var button = (Button)sender;
+            var masterItem = _masterItemService.GetMasterItemById(int.Parse(button.Name));
+            QuantityListBox.Items.Add(1);
+            UnitPriceListBox.Items.Add(Math.Round(Convert.ToDecimal(masterItem.UnitPrice), 2).ToString("N"));
+            ProductListBox.Items.Add(masterItem.ShortDescription);
+            TotalUnitPriceListBox.Items.Add(Math.Round(Convert.ToDecimal(masterItem.UnitPrice), 2).ToString("N"));
         }
+
 
         private void MainFormTimer_Tick(object sender, EventArgs e)
         {
@@ -81,6 +86,12 @@ namespace DBO2.Forms.POSMainForms
         private void CheckoutButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //time ticker for mainform // date
+        private void DateTimeTick()
+        {
+            DateTimeLabel.Text = DateTime.Now.ToString();
         }
     }
 }
